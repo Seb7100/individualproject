@@ -1,0 +1,108 @@
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+
+  <title>Restaurant Mazza</title>
+  <meta name="description" content="Mazza Restaurant i Vejle, bestil mad herfra">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+        <img src="images/logo.png">
+        </div>
+    </header>
+    
+<!-- Sektion 1 -->
+    <section id="sektion1">
+        <div id="bg">
+            <div id="mid">
+            <div id="midBoks">
+                <h1>Mazza Restaurant i Vejle</h1>
+                <button id="myBtn">Bestil bord her</button>
+            </div>
+            <div id="tekst"><a href="#sektion2">Læs mere <span class="fa fa-angle-down" style="font-size: 24px;"></span></a></div>
+            </div>
+        </div>
+    </section>
+
+<!-- Sektion 2 -->
+    <section id="sektion2">
+        <div id="boks1">
+            <h2>Om Mazza Restaurant</h2>
+            <h3>En lækker buffet</h3>
+            <p>Hos Mazza Restaurant , i Vejle midtby, finder du en orientalsk restaurant hvor alle retter er lavet fra bunden, efter autentiske opskrifter.
+                Vores køkken tilbyder mad fra det østlige køkken. Vores hyggelige lille buffet restaurant er beliggende centralt i Vejle lige midt på gågaden ikke langt fra Føtex, Indkøbscenter Bryggen og Fitness World.</p>
+        </div>
+        <div id="boks2">
+            <img src="images/om.jpg">
+        </div>
+
+
+    </section>
+
+<!-- Modal -->
+
+<!-- The Modal -->
+    <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="container">
+            <div class="container-form">
+                    <form action="#">
+                        <h2 class="heading heading-yellow">Online bordreservation</h2>
+    
+                        <div class="form-field">
+                            <p>Dit fulde navn</p>
+                            <input type="text" placeholder="Dit fulde navn" id="navn">
+                        </div>
+                        <div class="form-field">
+                            <p>Din E-mail</p>
+                            <input type="email" placeholder="Din e-mail" id="email">
+                        </div>
+                        <div class="form-field">
+                            <p>Dato</p>
+                            <input type="date" id="date-input">
+                        </div>
+                        <div class="form-field">
+                            <p>Tidspunkt</p>
+                            <input type="time" id="time-input">
+                        </div>
+                        <div class="form-field">
+                            <p>Hvor mange personer?</p>
+                            <select name="select" id="person-input">
+                                <option value="1">1 person</option>
+                                <option value="2">2 personer</option>
+                                <option value="3">3 personer</option>
+                                <option value="4">4 personer</option>
+                                <option value="5">5 personer</option>
+                                <option value="6">6 personer</option>
+                                <option value="7">7 personer</option>
+                                <option value="8">8 personer</option>
+                                <option value="9">9 personer</option>
+                                <option value="10">10 personer</option>
+                        
+                            </select>
+                        </div>
+    
+                        <button class="btn" id="btn">Send bestilling</button>
+                        <div id="msg">
+                            <pre></pre>
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+<p style="margin: auto; text-align: center;">af Sebastian Stokkendal</p>
+<script src="javascript/modal.js"></script>  
+<script src="javascript/order.js"></script>
+</body>
+</html>
