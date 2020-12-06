@@ -15,8 +15,6 @@ const addOrder = (ev)=>{
     //Display i console
 
     console.warn('added' , {orders} );
-    let pre = document.querySelector('#msg pre');
-    pre.textContent = ('Tak, din anmodning er sendt afsted. Tjek din mail for bekræftelse.');
 
     //Gemmer til localStorage
     localStorage.setItem('orderList', JSON.stringify(orders) );

@@ -6,6 +6,10 @@
   <meta name="description" content="Mazza Restaurant i Vejle, bestil mad herfra">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
+  <script src="javascript/scroll.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
 
 </head>
 
@@ -29,6 +33,31 @@
         </div>
     </section>
 
+<!-- Sektion mad -->
+    <section class="mad-sektion">
+        <h1>De bedste pizzaer i<br>Vejle</h1>
+        <div class="image-wrapper">
+            <img class="section_1_bg" src="images/madsektionbg.jpg" />
+            <div class="ingredienser-images">
+                <img class="section_1_01" src="images/section_1_01.webp" />
+                <img class="section_1_02" src="images/section_1_02.webp" />
+                <img class="section_1_03" src="images/section_1_03.webp" />
+                <img class="section_1_04" src="images/section_1_04.webp" />
+                <img class="section_1_05" src="images/section_1_05.webp" />
+                <img class="section_1_06" src="images/section_1_06.webp" />
+                <img class="section_1_07" src="images/section_1_07.webp" />
+                <img class="section_1_08" src="images/section_1_08.webp" />
+                <img class="section_1_09" src="images/section_1_09.webp" />
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+
 <!-- Sektion 2 -->
     <section id="sektion2">
         <div id="boks1">
@@ -44,12 +73,13 @@
 
     </section>
 
-<!-- Modal -->
 
-<!-- The Modal -->
+
+
+<!-- Modal -->
     <div id="myModal" class="modal">
 
-  <!-- Modal content -->
+  <!-- Modal indhold -->
     <div class="modal-content">
         <span class="close">&times;</span>
         <div class="container">
@@ -59,23 +89,23 @@
     
                         <div class="form-field">
                             <p>Dit fulde navn</p>
-                            <input type="text" placeholder="Dit fulde navn" id="navn">
+                            <input type="text" placeholder="Dit fulde navn" id="navn" >
                         </div>
                         <div class="form-field">
                             <p>Din E-mail</p>
-                            <input type="email" placeholder="Din e-mail" id="email">
+                            <input type="email" placeholder="Din e-mail" id="email" >
                         </div>
                         <div class="form-field">
                             <p>Dato</p>
-                            <input type="date" id="date-input">
+                            <input type="date" id="date-input" >
                         </div>
                         <div class="form-field">
                             <p>Tidspunkt</p>
-                            <input type="time" id="time-input">
+                            <input type="time" id="time-input" >
                         </div>
                         <div class="form-field">
                             <p>Hvor mange personer?</p>
-                            <select name="select" id="person-input">
+                            <select name="select" id="person-input" >
                                 <option value="1">1 person</option>
                                 <option value="2">2 personer</option>
                                 <option value="3">3 personer</option>
@@ -90,10 +120,9 @@
                             </select>
                         </div>
     
-                        <button class="btn" id="btn">Send bestilling</button>
-                        <div id="msg">
-                            <pre></pre>
-                        </div>
+                        <button class="btn" id="btn" type="submit">Send bestilling</button>
+                        <div class="error"></div>
+                        
                     </form>
             </div>
         </div>
@@ -101,8 +130,13 @@
 
     </div>
 
+
+
 <p style="margin: auto; text-align: center;">af Sebastian Stokkendal</p>
-<script src="javascript/modal.js"></script>  
-<script src="javascript/order.js"></script>
+
+<footer>
+    <script src="javascript/modal.js"></script>  
+  <script src="javascript/order.js"></script>
+</footer>
 </body>
 </html>
