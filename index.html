@@ -11,9 +11,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
-    <script src="javascript/scroll.js"></script>
     <script src="javascript/menu.js"></script>
+    <script src="javascript/scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
     <!-- fordi at jeg ikke selv vil hoste ScrollMagic, så importer jeg med CDNJS-->
@@ -108,43 +113,46 @@
       <div id="menu-wrapper">
         <h1>Menu</h1>
         <div class="menu-skift">
-          <div id="knap0">
-            <button id="knap0-1" class="active">Alle</button>
-          </div>
-          <div id="knap1">
-            <button id="knap1-1">Pizza</button>
-          </div>
-          <div id="knap2">
-            <button id="knap2-1">Salater</button>
-          </div>
-          <div id="knap3">
-            <button id="knap3-1">Bøf</button>
-          </div>
+          <ul id="knap0">
+            <li id="knap0-1" class="btn1 active" data-filter="all">Alle</li>
+            <li id="knap1-1" class="btn1" data-filter="burger">Burger</li>
+            <li id="knap2-1" class="btn1" data-filter="salat">Salater</li>
+            <li id="knap3-1" class="btn1" data-filter="bof">Bøf</li>
+          </ul>
         </div>
-        <div class="item-wrapper1">
+        <div class="item item-wrapper1 burger">
           <div id="item1">
             <div id="item1-1"><img src="images/burger.png" /></div>
             <div id="item1-2">
               <h3>Burger fra køkkenet</h3>
-              <p>En lækker burger med 200g bøf<br /><span>780 kcal</span></p>
+              <p>
+                En lækker burger med 200g bøf<br /><span>780 kcal</span>
+                <br /><br />kr. 55,-
+              </p>
             </div>
           </div>
         </div>
-        <div class="item-wrapper2">
+        <div class="item item-wrapper2 salat">
           <div id="item2">
             <div id="item2-1"><img src="images/salat.png" /></div>
             <div id="item2-2">
               <h3>Salat fra køkkenet</h3>
-              <p>En lækker burger med 200g bøf<br /><span>200 kcal</span></p>
+              <p>
+                En lækker salat med kylling<br /><span>200 kcal</span>
+                <br /><br />kr. 45,-
+              </p>
             </div>
           </div>
         </div>
-        <div class="item-wrapper3">
+        <div class="item item-wrapper3 bof">
           <div id="item3">
             <div id="item3-1"><img src="images/boef.png" /></div>
             <div id="item3-2">
               <h3>Bøf fra køkkenet</h3>
-              <p>En lækker burger med 200g bøf<br /><span>360 kcal</span></p>
+              <p>
+                En lækker bøf af 200g<br /><span>360 kcal</span> <br /><br />kr.
+                85,-
+              </p>
             </div>
           </div>
         </div>

@@ -109,7 +109,7 @@ body {
   padding-top: 50px;
   padding-bottom: 50px;
   flex-direction: column;
-  background: rgba(0, 0, 0, 0.308);
+  background: rgba(0, 0, 0, 0);
   border-radius: 5px;
 }
 
@@ -427,6 +427,37 @@ select {
   text-align: center;
 }
 
+.btn1 {
+  background-color: #59707e;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  width: 35%;
+  border: none;
+  font-size: 18px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 7px 10px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+.btn1:hover {
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
+  box-shadow: 10px 12px 15px rgba(0, 0, 0, 0.3);
+}
+
 .menu-skift {
   width: 100%;
   display: flex;
@@ -438,22 +469,34 @@ select {
   box-shadow: 7px 10px 12px rgba(0, 0, 0, 0.1);
 }
 
-#knap0, #knap1, #knap2, #knap3 {
+#knap0,
+#knap1,
+#knap2,
+#knap3 {
   padding: 10px;
   width: 30%;
   display: flex;
   justify-content: center;
+  list-style: none;
 }
 
-#knap0-1, #knap1-1, #knap2-1, #knap3-1 {
+#knap0-1,
+#knap1-1,
+#knap2-1,
+#knap3-1 {
   padding: 20px;
   cursor: pointer;
   background: #84aac0;
   border: none;
   border-radius: 5px;
+  width: 100%;
+  margin: 2%;
 }
 
-#knap0-1:hover, #knap1-1:hover, #knap2-1:hover, #knap3-1:hover {
+#knap0-1:hover,
+#knap1-1:hover,
+#knap2-1:hover,
+#knap3-1:hover {
   background: #35434b;
   color: white;
   border-radius: 5px;
@@ -461,13 +504,15 @@ select {
 }
 
 .active {
-  background: #35434b!important;
+  background: #35434b !important;
   color: white;
   border-radius: 5px;
   border: none;
 }
 
-.item-wrapper1, .item-wrapper2, .item-wrapper3  {
+.item-wrapper1,
+.item-wrapper2,
+.item-wrapper3 {
   height: 100%;
   padding-top: 2%;
   background: #84aac0;
