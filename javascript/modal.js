@@ -1,25 +1,25 @@
-// Get the modal
+// Target den id der hedder myModal i HTML
 var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
+// Target den knap med id der hedder myBtn i HTML
 var btn = document.getElementById("myBtn");
 
-// Get the <span> element that closes the modal
+// Target den class der hedder close i HTML
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
+// Når brugeren klikker på knappen, åben modulet
+btn.onclick = function () {
   modal.style.display = "block";
-}
+};
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+// Når brugeren klikker på krydset, (<span>), luk da modulet
+span.onclick = function () {
   modal.style.display = "none";
-}
+};
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+// Når brugeren klikker uden for modulet, luk det
+window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+};

@@ -1,142 +1,214 @@
 <html lang="da">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-  <title>Restaurant Mazza</title>
-  <meta name="description" content="Mazza Restaurant i Vejle, bestil mad herfra">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
-  <script src="javascript/scroll.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+    <title>Restaurant Mazza</title>
+    <meta
+      name="description"
+      content="Mazza Restaurant i Vejle, bestil mad herfra"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="javascript/scroll.js"></script>
+    <script src="javascript/menu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <!-- fordi at jeg ikke selv vil hoste ScrollMagic, så importer jeg med CDNJS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+  </head>
 
-</head>
-
-<body>
-    <header>
-        <div id="logo">
-        <img src="images/logo.png">
-        </div>
+  <body>
+    <!-- Header -->
+    <header class="main-header">
+      <div class="wrapper">
+        <h1 class="mazza-logo">
+          <img src="images/logo.png" width="170" height="95" />
+        </h1>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li>
+              <a href="#sektion1">Forside</a>
+            </li>
+            <li>
+              <a href="#sektion2">Om Mazza</a>
+            </li>
+            <li>
+              <a href="#sektion3">Menu</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    
-<!-- Sektion 1 -->
+
+    <!-- Sektion 1 -->
     <section id="sektion1">
-        <div id="bg">
-            <div id="mid">
-            <div id="midBoks">
-                <h1>Mazza Restaurant i Vejle</h1>
-                <button id="myBtn">Bestil bord her</button>
-            </div>
-            <div id="tekst"><a href="#sektion2">Læs mere <span class="fa fa-angle-down" style="font-size: 24px;"></span></a></div>
-            </div>
+      <div id="bg">
+        <div id="mid">
+          <div id="midBoks">
+            <h1>Mazza Restaurant i Vejle</h1>
+            <button id="myBtn">Bestil bord her</button>
+          </div>
+          <div id="tekst">
+            <a href="#sektion2"
+              >Læs mere <br /><br /><span
+                class="fa fa-angle-down"
+                style="font-size: 35px"
+              ></span
+            ></a>
+          </div>
         </div>
+      </div>
     </section>
 
-<!-- Sektion mad -->
+    <!-- Sektion mad -->
     <section class="mad-sektion">
-        <h1>De bedste pizzaer i<br>Vejle</h1>
-        <div class="image-wrapper">
-            <img class="section_1_bg" src="images/madsektionbg.jpg" />
-            <div class="ingredienser-images">
-                <img class="section_1_01" src="images/section_1_01.webp" />
-                <img class="section_1_02" src="images/section_1_02.webp" />
-                <img class="section_1_03" src="images/section_1_03.webp" />
-                <img class="section_1_04" src="images/section_1_04.webp" />
-                <img class="section_1_05" src="images/section_1_05.webp" />
-                <img class="section_1_06" src="images/section_1_06.webp" />
-                <img class="section_1_07" src="images/section_1_07.webp" />
-                <img class="section_1_08" src="images/section_1_08.webp" />
-                <img class="section_1_09" src="images/section_1_09.webp" />
-            </div>
-
+      <h1>Hos Mazza får du de bedste pizzaer i Vejle</h1>
+      <h2>Få den bedste smagsoplevelse med ovnbagte pizzaer fra Mazza</h2>
+      <div class="image-wrapper">
+        <img class="section_1_bg" src="images/madsektionbg.jpg" />
+        <div class="ingredienser-images">
+          <img class="section_1_01" src="images/section_1_01.webp" />
+          <img class="section_1_02" src="images/section_1_02.webp" />
+          <img class="section_1_03" src="images/section_1_03.webp" />
+          <img class="section_1_04" src="images/section_1_04.webp" />
+          <img class="section_1_05" src="images/section_1_05.webp" />
+          <img class="section_1_06" src="images/section_1_06.webp" />
+          <img class="section_1_07" src="images/section_1_07.webp" />
+          <img class="section_1_08" src="images/section_1_08.webp" />
+          <img class="section_1_09" src="images/section_1_09.webp" />
         </div>
-
-
-
+      </div>
     </section>
 
-
-
-<!-- Sektion 2 -->
+    <!-- Sektion 2 -->
     <section id="sektion2">
-        <div id="boks1">
-            <h2>Om Mazza Restaurant</h2>
-            <h3>En lækker buffet</h3>
-            <p>Hos Mazza Restaurant , i Vejle midtby, finder du en orientalsk restaurant hvor alle retter er lavet fra bunden, efter autentiske opskrifter.
-                Vores køkken tilbyder mad fra det østlige køkken. Vores hyggelige lille buffet restaurant er beliggende centralt i Vejle lige midt på gågaden ikke langt fra Føtex, Indkøbscenter Bryggen og Fitness World.</p>
-        </div>
-        <div id="boks2">
-            <img src="images/om.jpg">
-        </div>
-
-
+      <div id="boks1">
+        <h2>Om Mazza Restaurant</h2>
+        <h3>- Et lækkert spisested</h3>
+        <p>
+          Hos Mazza Restaurant , i Vejle midtby, finder du en orientalsk
+          restaurant hvor alle retter er lavet fra bunden, efter autentiske
+          opskrifter. Vores køkken tilbyder mad fra det østlige køkken. Vores
+          hyggelige lille buffet restaurant er beliggende centralt i Vejle lige
+          midt på gågaden ikke langt fra Føtex, Indkøbscenter Bryggen og Fitness
+          World.
+        </p>
+      </div>
+      <div id="boks2">
+        <img src="images/om.jpg" />
+      </div>
     </section>
 
+    <!-- Sektion 3 -->
 
+    <section id="sektion3">
+      <div id="menu-wrapper">
+        <h1>Menu</h1>
+        <div class="menu-skift">
+          <div id="knap0">
+            <button id="knap0-1" class="active">Alle</button>
+          </div>
+          <div id="knap1">
+            <button id="knap1-1">Pizza</button>
+          </div>
+          <div id="knap2">
+            <button id="knap2-1">Salater</button>
+          </div>
+          <div id="knap3">
+            <button id="knap3-1">Bøf</button>
+          </div>
+        </div>
+        <div class="item-wrapper1">
+          <div id="item1">
+            <div id="item1-1"><img src="images/burger.png" /></div>
+            <div id="item1-2">
+              <h3>Burger fra køkkenet</h3>
+              <p>En lækker burger med 200g bøf<br /><span>780 kcal</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="item-wrapper2">
+          <div id="item2">
+            <div id="item2-1"><img src="images/salat.png" /></div>
+            <div id="item2-2">
+              <h3>Salat fra køkkenet</h3>
+              <p>En lækker burger med 200g bøf<br /><span>200 kcal</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="item-wrapper3">
+          <div id="item3">
+            <div id="item3-1"><img src="images/boef.png" /></div>
+            <div id="item3-2">
+              <h3>Bøf fra køkkenet</h3>
+              <p>En lækker burger med 200g bøf<br /><span>360 kcal</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-<!-- Modal -->
+    <!-- Modal -->
     <div id="myModal" class="modal">
-
-  <!-- Modal indhold -->
-    <div class="modal-content">
+      <!-- Modal indhold -->
+      <div class="modal-content">
         <span class="close">&times;</span>
         <div class="container">
-            <div class="container-form">
-                    <form action="#">
-                        <h2 class="heading heading-yellow">Online bordreservation</h2>
-    
-                        <div class="form-field">
-                            <p>Dit fulde navn</p>
-                            <input type="text" placeholder="Dit fulde navn" id="navn" >
-                        </div>
-                        <div class="form-field">
-                            <p>Din E-mail</p>
-                            <input type="email" placeholder="Din e-mail" id="email" >
-                        </div>
-                        <div class="form-field">
-                            <p>Dato</p>
-                            <input type="date" id="date-input" >
-                        </div>
-                        <div class="form-field">
-                            <p>Tidspunkt</p>
-                            <input type="time" id="time-input" >
-                        </div>
-                        <div class="form-field">
-                            <p>Hvor mange personer?</p>
-                            <select name="select" id="person-input" >
-                                <option value="1">1 person</option>
-                                <option value="2">2 personer</option>
-                                <option value="3">3 personer</option>
-                                <option value="4">4 personer</option>
-                                <option value="5">5 personer</option>
-                                <option value="6">6 personer</option>
-                                <option value="7">7 personer</option>
-                                <option value="8">8 personer</option>
-                                <option value="9">9 personer</option>
-                                <option value="10">10 personer</option>
-                        
-                            </select>
-                        </div>
-    
-                        <button class="btn" id="btn" type="submit">Send bestilling</button>
-                        <div class="error"></div>
-                        
-                    </form>
-            </div>
+          <div class="container-form">
+            <form action="#">
+              <h2 class="heading heading-yellow">Online bordreservation</h2>
+
+              <div class="form-field">
+                <p>Dit fulde navn</p>
+                <input type="text" placeholder="Dit fulde navn" id="navn" />
+              </div>
+              <div class="form-field">
+                <p>Din E-mail</p>
+                <input type="email" placeholder="Din e-mail" id="email" />
+              </div>
+              <div class="form-field">
+                <p>Dato</p>
+                <input type="date" id="date-input" />
+              </div>
+              <div class="form-field">
+                <p>Tidspunkt</p>
+                <input type="time" id="time-input" />
+              </div>
+              <div class="form-field">
+                <p>Hvor mange personer?</p>
+                <select name="select" id="person-input">
+                  <option value="1">1 person</option>
+                  <option value="2">2 personer</option>
+                  <option value="3">3 personer</option>
+                  <option value="4">4 personer</option>
+                  <option value="5">5 personer</option>
+                  <option value="6">6 personer</option>
+                  <option value="7">7 personer</option>
+                  <option value="8">8 personer</option>
+                  <option value="9">9 personer</option>
+                  <option value="10">10 personer</option>
+                </select>
+              </div>
+
+              <button class="btn" id="btn" type="submit">
+                Send bestilling
+              </button>
+              <div class="error"></div>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
 
-    </div>
-
-
-
-<p style="margin: auto; text-align: center;">af Sebastian Stokkendal</p>
-
-<footer>
-    <script src="javascript/modal.js"></script>  
-  <script src="javascript/order.js"></script>
-</footer>
-</body>
+    <footer>
+      <script src="javascript/modal.js"></script>
+      <script src="javascript/order.js"></script>
+      <p style="margin: auto; text-align: center; padding-top: 30px">
+        af Sebastian Stokkendal
+      </p>
+    </footer>
+  </body>
 </html>
